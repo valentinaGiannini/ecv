@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+!pip install SimpleITK 
+import SimpleITK as sitk
+import numpy as np
 
 st.title('Calcoliamo ecv')
 
-import SimpleITK as sitk
-import numpy as np
-import matplotlib.pyplot as plt
+
+
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
 
