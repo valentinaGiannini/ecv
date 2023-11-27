@@ -9,6 +9,7 @@ import numpy as np
 st.title('Calcoliamo ecv')
 
 HT = st.text_input('Imposta valore Ematocrito')
+st.write(1-HT)
 
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
@@ -17,7 +18,7 @@ le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
 # # Read the .nii image c
 # basale = sitk.ReadImage(basale_path)
 # lee = sitk.ReadImage(le_path)
-# ecv_array = 0.6 * (sitk.GetArrayFromImage(lee) - sitk.GetArrayFromImage(basale))/198.0
+# ecv_array = (1-HT) * (sitk.GetArrayFromImage(lee) - sitk.GetArrayFromImage(basale))/198.0
 # ecv_array[ecv_array < 0.0] = 0.0
 # ecv_array[ecv_array > 8.0] = 8.0
 # ecv_array_int=np.round(ecv_array*10)
