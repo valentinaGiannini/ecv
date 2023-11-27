@@ -9,7 +9,7 @@ import numpy as np
 st.title('Calcoliamo ecv')
 
 HT = st.text_input('Imposta valore Ematocrito')
-risultato = 1- HT
+risultato = 1- float(HT)
 st.write(1-HT)
 st.write(f' {risultato}!')
 
