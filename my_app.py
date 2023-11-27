@@ -17,6 +17,8 @@ risultato = 1- HT
 
 deltaBlood = st.number_input('Imposta deltablood')
 
+input_path = st.file_uploader('Upload files')
+
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
 
