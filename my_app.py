@@ -25,7 +25,7 @@ deltaBlood = st.number_input('Imposta deltablood')
 
 
 
-st.write('You selected ' {filename})
+st.write(s' {filename}')
 # input_path = st.file_uploader('Upload files')
 
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
