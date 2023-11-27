@@ -8,7 +8,7 @@ inport nibabel as nb
 
 st.title('Calcoliamo ecv')
 
-
+HT = st.text_input('Imposta valore Ematocrito')
 
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
