@@ -4,7 +4,7 @@ import numpy as np
 # pip install -r requirements.txt
 # import SimpleITK as sitk
 import numpy as np
-import nibabel as nb
+
 
 st.title('Calcoliamo ecv')
 
