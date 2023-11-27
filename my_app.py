@@ -12,7 +12,7 @@ import numpy as np
 # selected_filename = st.selectbox('Select a file', filenames)
 # #return os.path.join(folder_path, selected_filename)
     
-# filename = file_selector()    
+# filename = file_selector()   
 st.title('Calcoliamo ecv')
 
 HT = st.number_input('Imposta valore Ematocrito')
@@ -21,9 +21,6 @@ risultato = 1- HT
 # st.write(f' {risultato}')
 
 deltaBlood = st.number_input('Imposta deltablood')
-
-
-
 
 #st.write(f' {filename}')
 input_path = st.file_uploader('Upload files')
