@@ -8,10 +8,10 @@ import numpy as np
 
 st.title('Calcoliamo ecv')
 
-HT = st.text_input('Imposta valore Ematocrito')
-risultato = 1- float(HT)
-st.write(1-HT)
-st.write(f' {risultato}!')
+HT = st.number_input('Imposta valore Ematocrito')
+risultato = 1- HT
+# st.write(1-HT)
+# st.write(f' {risultato}!')
 
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
