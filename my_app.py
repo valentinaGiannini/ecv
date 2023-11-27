@@ -22,10 +22,11 @@ risultato = 1- HT
 deltaBlood = st.number_input('Imposta deltablood')
 
 #st.write(f' {filename}')
-input_path = st.file_uploader('Upload files')
+basale_path = st.file_uploader('Upload basale')
+le_path = st.file_uploader('Upload lee')
 
-basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
-le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
+# basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
+# le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
 
 
 
