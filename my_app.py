@@ -24,7 +24,22 @@ deltaBlood = st.number_input('Imposta deltablood')
 #st.write(f' {filename}')
 basale_path = st.file_uploader('Upload basale')
 le_path = st.file_uploader('Upload lee')
+st.stop
 
+if 'clicked' not in st.session_state:
+    st.session_state.clicked = False
+
+def click_button():
+    st.session_state.clicked = True
+
+st.button('Click me', on_click=click_button)
+
+if st.session_state.clicked:
+    # The message and nested widget will remain on the page
+    st.write('Button clicked!')
+    st.slider('Select a value')
+    ecv_array = (1-HT) * (lee - basale)/deltaBlood
+  
 # basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 # le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
 
@@ -34,7 +49,6 @@ le_path = st.file_uploader('Upload lee')
 # basale = sitk.ReadImage(basale_path)
 # lee = sitk.ReadImage(le_path)
 # ecv_array = (1-HT) * (sitk.GetArrayFromImage(lee) - sitk.GetArrayFromImage(basale))/deltaBlood
-ecv_array = (1-HT) * (lee - basale)/deltaBlood
 # ecv_array[ecv_array < 0.0] = 0.0
 # ecv_array[ecv_array > 8.0] = 8.0
 # ecv_array_int=np.round(ecv_array*10)
