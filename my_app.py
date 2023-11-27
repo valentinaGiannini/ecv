@@ -7,10 +7,10 @@ import numpy as np
 # import SimpleITK as sitk
 import numpy as np
 
-folder_path='C:Users/Valentina/Downloads/'
-filenames = os.listdir(folder_path)
-selected_filename = st.selectbox('Select a file', filenames)
-#return os.path.join(folder_path, selected_filename)
+# folder_path='C:Users/Valentina/Downloads/'
+# filenames = os.listdir(folder_path)
+# selected_filename = st.selectbox('Select a file', filenames)
+# #return os.path.join(folder_path, selected_filename)
     
 filename = file_selector()    
 st.title('Calcoliamo ecv')
@@ -26,7 +26,7 @@ deltaBlood = st.number_input('Imposta deltablood')
 
 
 #st.write(f' {filename}')
-# input_path = st.file_uploader('Upload files')
+input_path = st.file_uploader('Upload files')
 
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
