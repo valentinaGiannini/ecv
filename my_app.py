@@ -17,7 +17,14 @@ risultato = 1- HT
 
 deltaBlood = st.number_input('Imposta deltablood')
 
-input_path = st.file_uploader('Upload files')
+def file_selector(folder_path='C:Users/Valentina/Downloads/'):
+    filenames = os.listdir(folder_path)
+    selected_filename = st.selectbox('Select a file', filenames)
+    return os.path.join(folder_path, selected_filename)
+
+filename = file_selector()
+st.write('You selected `%s`' % filename)
+# input_path = st.file_uploader('Upload files')
 
 basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
 le_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/LE.nii'
