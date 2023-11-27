@@ -7,7 +7,12 @@ import numpy as np
 # import SimpleITK as sitk
 import numpy as np
 
-
+def file_selector(folder_path='C:Users/Valentina/Downloads/'):
+    filenames = os.listdir(folder_path)
+    selected_filename = st.selectbox('Select a file', filenames)
+    return os.path.join(folder_path, selected_filename)
+    
+filename = file_selector()    
 st.title('Calcoliamo ecv')
 
 HT = st.number_input('Imposta valore Ematocrito')
@@ -17,12 +22,9 @@ risultato = 1- HT
 
 deltaBlood = st.number_input('Imposta deltablood')
 
-def file_selector(folder_path='C:Users/Valentina/Downloads/'):
-    filenames = os.listdir(folder_path)
-    selected_filename = st.selectbox('Select a file', filenames)
-    return os.path.join(folder_path, selected_filename)
 
-filename = file_selector()
+
+
 st.write('You selected `%s`' % filename)
 # input_path = st.file_uploader('Upload files')
 
