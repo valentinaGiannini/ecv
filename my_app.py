@@ -7,10 +7,10 @@ import numpy as np
 # import SimpleITK as sitk
 import numpy as np
 
-def file_selector(folder_path='C:Users/Valentina/Downloads/'):
-    filenames = os.listdir(folder_path)
-    selected_filename = st.selectbox('Select a file', filenames)
-    return os.path.join(folder_path, selected_filename)
+folder_path='C:Users/Valentina/Downloads/':
+filenames = os.listdir(folder_path)
+selected_filename = st.selectbox('Select a file', filenames)
+#return os.path.join(folder_path, selected_filename)
     
 filename = file_selector()    
 st.title('Calcoliamo ecv')
