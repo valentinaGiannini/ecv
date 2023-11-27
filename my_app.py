@@ -36,7 +36,6 @@ st.button('Click me', on_click=click_button)
 if st.session_state.clicked:
     # The message and nested widget will remain on the page
     st.write('Button clicked!')
-    st.slider('Select a value')
     ecv_array = (1-HT) * (lee - basale)/deltaBlood
   
 # basale_path = 'C:Users/Valentina/Downloads/COLLORAFI_LIDIA/basale.nii'
