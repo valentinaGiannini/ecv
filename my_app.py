@@ -34,6 +34,7 @@ le_path = st.file_uploader('Upload lee')
 # basale = sitk.ReadImage(basale_path)
 # lee = sitk.ReadImage(le_path)
 # ecv_array = (1-HT) * (sitk.GetArrayFromImage(lee) - sitk.GetArrayFromImage(basale))/deltaBlood
+ecv_array = (1-HT) * (lee - basale)/deltaBlood
 # ecv_array[ecv_array < 0.0] = 0.0
 # ecv_array[ecv_array > 8.0] = 8.0
 # ecv_array_int=np.round(ecv_array*10)
