@@ -22,8 +22,8 @@ risultato = 1- HT
 deltaBlood = st.number_input('Imposta deltablood')
 
 #st.write(f' {filename}')
-basale_path = st.file_uploader('Upload basale')
-le_path = st.file_uploader('Upload lee')
+basale = st.file_uploader('Upload basale')
+le= st.file_uploader('Upload lee')
 
 if 'clicked' not in st.session_state:
     st.session_state.clicked = False
